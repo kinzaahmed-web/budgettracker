@@ -1,0 +1,316 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
+
+/* The sidebar menu */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #5d4954;
+}
+
+.logo {
+    color: rgb(221, 215, 215);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.7rem;
+    display:inline;
+    float:left;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.nav-links {
+    float:right;
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    padding-right: 30px;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-links a:hover{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(221, 215, 215);
+    margin: 5px; 
+    transition: all 0.2s ease;
+}
+
+/*Start anchor tag animation*/
+.nav-links a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #cfafaf;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 0.25s;
+  }
+  .nav-links a:hover::after {
+    transform: scale(1, 1);
+  }
+/*End anchor tag animation*/
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links {
+        z-index: 5;
+        position: absolute;
+        right: 0px;
+        height: calc(100vh - 60px);
+        top: 60px;
+        background-color: #5d4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+        float:right;
+        padding-right: 10px;
+        align-items: center;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+footer {
+    position: fixed;
+    bottom: 1%;
+    width: 100%;
+    text-align: center;
+  }
+  
+/* Project list (No Projects) */
+
+.noproject-wrapper {
+    margin-top: 250px;
+    padding: 80px 0px;
+    border: 6px solid dashed #9E9E9E;
+}
+.noproject-wrapper h3 {
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+/* Project Detail Statistics */
+.section-stats .card-panel {
+    margin: 0px;/*removed margin*/
+  }
+.section-stats h1 {
+    font-size: 4vw;
+    margin: 15px 0px;
+}
+@media(max-width: 992px) {
+    .section-stats h1{
+        font-size: (16px + 6vw);
+    }
+}
+
+/* Project Add View  */
+form ul li.category{
+    display: inline-block;
+    background-color: rgb(233, 232, 232);
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    transition: 350ms;
+}
+form ul li.category:hover{
+    cursor: pointer;
+    background-color: rgb(215, 215, 215);
+}
+
+/* Project Detail Expenses */
+.section-expenses button {
+    font-weight: bold;
+    text-shadow: 0px 3px 4px rgba(0,0,0,.25);
+    background-color: #6FCF97;
+    margin-bottom: 30px;
+}
+.section-expenses li:nth-child(odd){
+    background-color: #F2F2F2;
+}
+.section-expenses .close-icon:hover{
+    cursor: pointer;
+}
+.modal{
+    position: fixed;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    padding: 15px 30px 80px;
+}
+
+/* Home Page */
+.home{
+    width: 1280px;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.home .box{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: rgb(247, 247, 234);
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block; 
+}
+
+.home .box .imgBox{
+    position: absolute;
+    overflow: hidden;
+}
+
+.home .box .imgBox img{
+    max-width: 100%;
+    transition: transform 1s;
+    width: 400px;
+    height: 400px;
+}
+.home .box:hover .imgBox img{
+    transform: scale(1.2);
+}
+.home .box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(196, 171, 171, 0.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+.home .box:hover .details{
+    transform: scaleY(1);
+}
+.home .box .details .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+.home .box .details .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: rgb(248, 248, 232);
+    text-align: center;
+}
+.home .box .details .content p{
+    margin: 20px 10px 10px;
+    padding: 0;
+    text-align: center;
+}
+.home .box .details .content b{
+    color: rgb(213, 223, 194);
+}
+@media only screen and (max-width : 480px) {
+    /* Smartphone view */
+    .home{
+       width:125%;
+       padding-bottom: 100%;
+    }
+    body{
+        overflow-x: hidden;
+    }
+ }
+ @media only screen and (max-width : 650px) and (min-width : 481px){
+    /* Tablet view */
+    .home {
+       width: 150%;
+       padding-bottom: 50%;
+    }
+    body{
+        overflow-x: hidden;
+    }
+ }
+ @media only screen and (max-width : 1050px) and (min-width : 651px) {
+    /* Small desktop / ipad view*/
+    .home {
+      width: 150%;
+      padding-bottom: 50%;
+   }
+   body{
+    overflow-x: hidden;
+}
+ }
+ @media only screen and (max-width : 1290px) and (min-width : 1051px) {
+    /* Medium desktop */
+    .home {
+        width: 150%;
+        padding-bottom: 50%;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
