@@ -1,0 +1,28 @@
+{% extends 'budget/base.html' %}
+{% block content %}
+
+<div class="container">
+
+    <legend class="border-bottom pt-3">My Projects</legend>
+    <hr>
+    
+    <div class="row">
+        {% for project in project_list %}
+        <div class="col s12 13">
+            <div class="card-panel">
+                <a class="btn btn-outline-primary text-right mb-3" href="{% url 'detail' project.slug  %}" class="btn">{{ project.name }}</a>
+            </div>
+        </div>
+        {% empty %}
+        <div clas="noproject-wrapper center">
+            <h3 class="grey-text">Sorry, you don't have any projects, yet.</h3>
+            <a href="{% url 'add' %}" class="btn-large grey">
+                <i class="material-icons white-text left">add_circle</i>
+                <span class="bold">Add Projects</span>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+    
+</div>
+{% endblock %}
