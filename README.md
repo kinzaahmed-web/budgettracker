@@ -17,7 +17,7 @@
     <a href="https://github.com/kinzaahmed-web/budgetproject"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://my-budgettracker.herokuapp.com/">Use BudgetTrackero</a>
+    <a href="https://my-budgettracker.herokuapp.com/">Use BudgetTracker</a>
     ·
     <a href="https://github.com/kinzaahmed-web/budgetproject/issues">Report Bug</a>
     ·
