@@ -6,7 +6,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/kinzaahmed-web/budgetproject">
-    <img src="images/Screenshot.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">BudgetTracker</h3>
@@ -101,5 +101,5 @@ Project Link: [https://github.com/kinzaahmed-web/budgetproject](https://github.c
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/kinzaahmed/
-[product-screenshot]: images/Screenshot.png
+[product-screenshot]: images/logo.png
  
