@@ -101,5 +101,5 @@ Project Link: [https://github.com/kinzaahmed-web/budgetproject](https://github.c
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/kinzaahmed/
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/Screenshot.png
  
