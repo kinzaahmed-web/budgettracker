@@ -48,7 +48,7 @@
 <!-- ABOUT THE PROJECT -->
 ## BudgetTracker
 
-[![product-screenshot]](https://my-budgettracker.herokuapp.com/)
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 Worried about how to budget? BugetTracker will try to make it easier for you and help show you how much you're spending and you can then determine how to balance your budget. When you use BudgetTracker you decide where your money goes instead of wondering where it all went.
 
