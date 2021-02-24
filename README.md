@@ -48,7 +48,7 @@
 <!-- ABOUT THE PROJECT -->
 ## BudgetTracker
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![BudgetTracker][product-screenshot]](https://my-budgettracker.herokuapp.com/)
 
 Worried about how to budget? BugetTracker will try to make it easier for you and help show you how much you're spending and you can then determine how to balance your budget. When you use BudgetTracker you decide where your money goes instead of wondering where it all went.
 
@@ -101,5 +101,5 @@ Project Link: [https://github.com/kinzaahmed-web/budgetproject](https://github.c
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/kinzaahmed/
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/Screenshot.png
  
